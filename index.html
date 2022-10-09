@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NewBudget</title>
+</head>
+<body>
+    <!-- Header Section-->
+    <header>
+        <h1 class="title">Budget</h1>
+        <div class="headerInput">
+            <label for="years">Year:</label>
+            <input type="number" class="headerDD" id="year" name="years" min="2022" max="3000" placeholder="Select Year">
+            <label for="months">Months:</label>
+            <select name="months" class="headerDD" id="months">
+                <option value="" disabled selected hidden>Month</option>
+                <option value="january">January</option>
+                <option value="feburary">Feburary</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+            </select>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <!-- Input Section -->
+        <div class="inputDiv">
+            <h2>Input</h2>
+            <div class="catagoryDiv">
+                <label class="inputLabel" for="catagories">Catagories:</label>
+                <select name="catagories" id="catagoriesDD">
+                    <option class="option" value="income">Income</option>
+                    <option class="option" value="expenses">Expenses</option>
+                    <option class="option" value="groceries">Groceries</option>
+                    <option class="option" value="gas">Gas</option>
+                    <option class="option" value="misc">Misc</option>
+                    <option class="option" value="eatingOut">Eating Out</option>
+                    <option class="option" value="myself">Myself</option>
+                </select>
+            </div>     
+            <div class="incomeInput">
+                <h4>Income</h4>
+                <h5>Checks</h5>
+                <label for="checkDate">Date:</label>
+                <input type="text">
+                <label for="checkAmount">Amount:</label>
+                <input type="number">
+                <h5>Tips</h5>
+                <label for="tipDate">Date:</label>
+                <input type="text">
+                <label for="tipAmount">Amount</label>
+                <input type="number">
+            </div>
+        </div>
+    </main>
+    
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
